@@ -1,6 +1,7 @@
 import { Menu, X, Leaf, LogIn, UserPlus } from 'lucide-react';
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import logo from '../../assets/ks_logo.png'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -21,8 +22,9 @@ const Header = () => {
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
             <Link to="/" className="flex items-center space-x-2">
-              <Leaf className="h-8 w-8 text-green-600" />
-              <span className="text-xl font-bold text-gray-900">CropGuard AI</span>
+              {/* <Leaf className="h-8 w-8 text-green-600" /> */}
+              <img src={logo} className="h-12 w-12 " alt="" />
+              <span className="text-xl font-bold text-green-600">Krishi Sanjeevani</span>
             </Link>
           </div>
 

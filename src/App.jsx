@@ -28,7 +28,7 @@ function App() {
             <Route path="/weather" element={<Weather />} />
           </Routes>
         </main>
-        <ChatWindow />
+        {/* <ChatWindow /> */}
         <Footer />
       </div>
     </Router>
